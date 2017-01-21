@@ -1,10 +1,15 @@
 # Angular Material Starter App
 
+![screen shot 2017-01-21 at 16 48 28](https://cloud.githubusercontent.com/assets/6287650/22175053/816280de-dffe-11e6-8512-7f107228f26f.png)
+
 Angular Material Starter App is a template that incorporates the most most commonly
 used angular material elements to give you a flying start on your web app.
 
 ## Installation
-Download the latest code from the [Releases page](https://github.com/cengkuru/ng-material-starter) . It's the easiest way to get started with ng-material-starter.
+1. Download the latest code from the [Releases page](https://github.com/cengkuru/ng-material-starter) . It's the easiest way to get started with ng-material-starter.
+2. Access the down the downloaded folder from your console
+3. Run npm install to get all the required node dependencies
+4. Run bower install to get all required bower depencences
 
 
 ## Questions and Issues
