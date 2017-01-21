@@ -1,0 +1,77 @@
+/**
+ * Created by Cengkuru on 8/29/2016.
+ */
+
+md-content.md-default-theme {
+  background-color: #eee;
+}
+
+md-card {
+  background-color: #fff;
+}
+
+md-card h2:first-of-type {
+  margin-top: 0;
+}
+
+md-toolbar .md-button.md-default-theme {
+  border-radius: 99%;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+.md-toolbar-tools-bottom {
+  font-size: small;
+}
+
+.md-toolbar-tools-bottom :last-child {
+  opacity: 0.8;
+}
+
+md-toolbar:not(.md-hue-1),
+.md-fab {
+  fill: #fff;
+}
+
+md-sidenav {
+  fill: #737373;
+}
+
+md-sidenav ng-md-icon {
+  position: relative;
+  top: 5px;
+}
+
+.user-avatar {
+  border-radius: 99%;
+}
+
+.ng-scope { height: 100%; }
+
+
+md-toolbar.md-default-theme:not(.md-menu-toolbar), md-toolbar:not(.md-menu-toolbar) {
+  background-color: rgb(138, 142, 144);
+  color: rgba(255,255,255,0.87);
+}
+
+md-tabs.md-default-theme.md-primary > md-tabs-wrapper, md-tabs.md-primary > md-tabs-wrapper {
+  background-color: rgb(94, 95, 96);
+}
+
+md-toolbar.md-default-theme.md-hue-3:not(.md-menu-toolbar), md-toolbar.md-hue-3:not(.md-menu-toolbar) {
+  background-color: rgb(76, 83, 86);
+  color: rgba(255,255,255,0.87);
+}
+
+md-tabs.md-default-theme md-ink-bar, md-tabs md-ink-bar {
+  color: rgb(251, 247, 247);
+  background: rgb(255, 255, 255);
+}
+
+
+.md-button.md-default-theme.md-fab, .md-button.md-fab {
+  background-color: rgb(9, 9, 9);
+  color: rgb(255,255,255);
+}
