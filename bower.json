@@ -51,6 +51,7 @@
     "angular": "1.6.1",
     "angular-sanitize": "^1.6.1",
     "angular-material": "master",
-    "lodash": "~4.17.0"
+    "lodash": "~4.17.0",
+    "angular-animate": "^1.6.1"
   }
 }

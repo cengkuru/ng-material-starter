@@ -1,7 +1,8 @@
 var gulp        = require('gulp'),
     sass        = require('gulp-sass'),
     rename      = require('gulp-rename'),
-    cssmin      = require('gulp-minify-css'),
+    cssmin      = require('gulp-clean-css'),
+    sourcemaps  = require('gulp-sourcemaps');
     concat      = require('gulp-concat'),
     uglify      = require('gulp-uglify'),
     jshint      = require('gulp-jshint'),
@@ -24,7 +25,7 @@ var gulp        = require('gulp'),
 var bases = {
     app: 'public/src/',
     build: 'public/build/',
-    bower: 'public/bower_components/'
+    bower: 'public/components/'
 };
 
 var paths = {
@@ -122,6 +123,7 @@ gulp.task('styles', function() {
         .pipe(concat('styles.css'))
         .pipe(prefix('last 2 versions'))
         .pipe(cssmin())
+        .pipe(sourcemaps.write())
         .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest(bases.build +'css/'));
 });
@@ -203,9 +205,14 @@ gulp.task('default', ['imagemin','indexpage', 'vendorjs', 'scripts','jshint', 's
         gulp.run('partialshtml');
     });
 
+    // watch for Vendor changes 0781569411
+    gulp.watch(bases.bower, function() {
+        gulp.run('vendorjs');
+    });
+
     // watch for JS changes
     gulp.watch(bases.app+paths.scripts, function() {
-        gulp.run('jshint','vendorjs', 'scripts');
+        gulp.run('scripts');
     });
 
     // watch for CSS changes
